@@ -37,25 +37,48 @@ social networking sharing options.
 
 Here are 7 web design fundamentals to adhere to:
 
-1. Logo Placement
-Logos are typically placed on the upper left of the page (at least in left-to-right languages such as English).
+### Logo Placement
+Logos are typically placed on the upper left of the page (in left-to-right languages such as English).
 
-2. Main Navigation
-The Main Navigation should appear in a bar across the top of your site, either to the right of the logo or below the logo. Less is more is also important for the number of pages included in the main navigation. Anywhere from 5-7 pages in the first level of navigation and no more than 3 levels for sub navigation is recommended.
+### Main Navigation
+The Main Navigation should appear in a bar across the top of your site, either to the right of the logo or below the logo. 
 
-3. Link Styling
-Clicking links has become second nature for web users. Users should be able to know instinctively what's clickable and what isn't.
+:::tip Less is more 
+Number of pages included in the main navigation is important. Anywhere from 5-7 pages in the first level of navigation and no more than 3 levels for sub navigation is recommended.
+:::
 
-4. Buttons
+### Break up pages into clearly defined areas
+Dividing the page into clearly defined areas is important because it allows
+users to decide quickly which areas of the page to focus on and which areas
+they can safely ignore. 
+
+:::info
+Eye-tracking studies of Web page scanning suggest that users decide very quickly in their initial glances which parts of the page are likely to have useful information and then rarely look at the other parts — almost as though they weren't there (Banner blindness—the ability of users to completely ignore areas they think will contain ads—is just the extreme case.)
+:::
+
+### Link Styling
+Clicking links has become second nature for web users. Users should be able to know instinctively what's clickable and what isn't. So, always "make it obvious what’s clickable".
+
+![](../../../static/img/usab14.jpg)
+
+:::tip
+In general, you’ll be fine if you just stick to one color for all text links or
+make sure that their shape and location identify them as clickable. Just don’t
+make silly mistakes like using the same color for links and nonclickable
+headings.
+:::
+
+
+### Buttons
 Buttons should also follow website conventions. They should have some sort of background and hover effect. The background color is typically the same color as the link text or a secondary color. *Buttons should be used for more important calls to action* whereas link text can be used within paragraphs of information.
 
-5. Colors
+### Colors
 Colors should be determined based on your company's brand standards. But if your company does not have brand standards then we recommend using 2-3 colors and 1-3 neutrals (white, black, gray). If you need more color then use tints and shades of the colors already chosen. This is an important website convention because it keeps your website cohesive and connects your branding on and off the web.
 
-5. Standard Icons
+### Standard Icons
 Icon conventions are particularly useful because they provide a clear explanation without words. An envelope icon signifies email, a shopping cart or bag icon signifies the checkout page, and social media icons signify social sharing. But icons only work if they are common enough that no explanation is necessary. 
 
-6. Content Hierarchy
+### Content Hierarchy
 Website conventions for website content is to create a content hierarchy. This means that content should be made up of headings and paragraphs. Heading One should be used only once and the highest up on the page. Pages with a clear visual hierarchy have three traits:
 
 1. **The more important something is, the more prominent it is.** The most important elements are either larger, bolder, in a distinctive color, set off by more white space, or nearer the top of the page—or some combination of the above.
@@ -73,8 +96,7 @@ you can show that things are similar by grouping them together under a heading, 
 
 Another example:
 
-
 ![](../../../static/img/usab13.jpg)
 
-7. Clear Naming
-With so many companies competing for attention on the web, it’s important to use creativity to stand out. But all too often, creativity sacrifices clarity. Teh rule to remember is "Clarity trumps creativity".
+### Clear Naming
+With so many companies competing for attention on the web, it’s important to use creativity to stand out. But all too often, creativity sacrifices clarity. The rule to remember is ***Clarity trumps creativity***.
