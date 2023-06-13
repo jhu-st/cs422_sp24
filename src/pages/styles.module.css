@@ -1,0 +1,84 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+ .heroBanner {
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 0rem;
+  }
+}
+
+
+.buttons {
+  display: flex;
+  display:inline-block;
+  justify-content: center;
+  padding: 0.4rem 0 1.2rem 0.6rem;
+}
+
+.bb1 {
+color: #3C89BD;
+border: 2px solid #3C89BD;
+}
+
+.bb1:hover {
+  background-color: #3C89BD;
+  color: white;
+}
+
+.bb2 {
+color: #1D8D84;
+border: 2px solid #1D8D84;
+}
+
+.bb2:hover {
+  background-color: #1D8D84;
+  color: white;
+}
+
+.buttons:hover {
+  display: flex;
+  display:inline-block;
+  justify-content: center;
+  padding: 0.4rem 0 1.2rem 0.6rem;
+}
+
+
+.button1 {
+  color: white;
+  background-color: #3C89BD;
+  border: 1px solid #3C89BD;
+  padding: 0 5px 0 5px;
+}
+
+.button2 {
+  color: white;
+  background-color: #1D8D84;
+  border: 1px solid #1D8D84;
+  padding: 0 5px 0 5px;
+}
+
+.main {
+  margin: 1% 3% 3% 2%;
+  padding: 1% 3% 3% 2%;
+  display: block;
+  flex-direction: column;
+  align-items: left;
+  place-content: left;
+}
+
+.avatar {
+  padding: 20px 0 20px 20px;
+  width: 16%;
+  border-radius: 50%;
+}

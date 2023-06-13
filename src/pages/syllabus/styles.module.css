@@ -1,0 +1,26 @@
+.iframe {
+    padding: 0px 0px 0px 1%;
+    display: block;
+    position: static;
+    margin-top: 1%;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    float: left;
+    border: 1px solid;
+    overflow: hidden;
+    width: 640px;
+    height: 420px;
+}
+
+.table {
+    position: static;
+    border: 1px solid;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 4px;
+    border-spacing: 0px;
+    float: left;
+    
+}
