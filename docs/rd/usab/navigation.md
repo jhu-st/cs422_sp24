@@ -141,3 +141,37 @@ whatever navigation bars, lists, or menus appear on the page.
 There are a number of ways to do this:
 
 ![](../../../static/img/usab33.jpg)
+
+## Breadcrumbs
+Like “You are here” indicators, Breadcrumbs show you where you are.
+
+![](../../../static/img/usab34.jpg)
+
+:::tip Breadcrumbs Naming
+They’re called Breadcrumbs because they’re reminiscent of the trail of
+crumbs Hansel dropped in the woods so he and Gretel could find their way
+back home
+:::
+
+## Tabs
+Tabs are one of the very few cases where using a physical metaphor in a user
+interface actually works. Like the tab dividers in a three-ring binder or tabs
+on folders in a file drawer. Tabs make an excellent navigation choice, but make sure you get them right. The active tab needs to be a different color or contrasting shade, and it has to physically connect with the space below it.
+
+![](../../../static/img/usab35.jpg)
+
+## Last but not the Least
+
+Here is your checklist questions for good Web navigation design:
+
+:::danger Acid test for good web navigation
+***Imagine that you’ve been blindfolded and locked in the trunk of a car, then
+driven around for a while and dumped on a page somewhere deep in the bowels of a Web site. If the page is well designed, when your vision clears you should be able to answer the following 6 questions without hesitation:***
+1. What site is this? (Site ID)
+1. What page am I on? (Page name)
+1. What are the major sections of this site? (Sections)
+1. What are my options at this level? (Local navigation)
+1. Where am I in the scheme of things? (“You are here” indicators)
+1. How can I search?
+:::
+
