@@ -9,8 +9,6 @@ Faced with the fact that your users are whizzing by, there are some important th
 * Create effective visual hierarchies
 * Break pages up into clearly defined areas
 * Make it obvious what’s clickable
-* Eliminate distractions
-* Format content to support scanning
 
 ## Design basics
 
@@ -35,7 +33,7 @@ social networking sharing options.
 
 ![](../../../static/img/usab9.jpg)
 
-Here are 7 web design fundamentals to adhere to:
+Here are the most prominent web design fundamentals to adhere to:
 
 ### Logo Placement
 Logos are typically placed on the upper left of the page (in left-to-right languages such as English).
@@ -43,7 +41,7 @@ Logos are typically placed on the upper left of the page (in left-to-right langu
 ### Main Navigation
 The Main Navigation should appear in a bar across the top of your site, either to the right of the logo or below the logo. 
 
-:::tip Less is more 
+:::caution Less is more 
 Number of pages included in the main navigation is important. Anywhere from 5-7 pages in the first level of navigation and no more than 3 levels for sub navigation is recommended.
 :::
 
@@ -98,5 +96,10 @@ Another example:
 
 ![](../../../static/img/usab13.jpg)
 
-### Clear Naming
-With so many companies competing for attention on the web, it’s important to use creativity to stand out. But all too often, creativity sacrifices clarity. The rule to remember is ***Clarity trumps creativity***.
+### More rules to go by
+
+:::danger Two more important rules to go by
+* **A note on creativity:** with so many companies competing for attention on the web, it’s important to use creativity to stand out. But all too often, creativity sacrifices clarity. The rule to remember is ***Clarity trumps Creativity***.
+* **Format text to support scanning:** 1) Keep your paragraphs short. 2) Highlight key terms. 3) Use bullted lists. 4) Don't let headings float; make sure they are closer to the section they introduce.
+:::
+![](../../../static/img/usab15.jpg)
