@@ -60,7 +60,7 @@ where you see only the relevant questions or information for that selection.
 Life is complicated, though, and some choices really aren't simple.
 When you can't avoid giving me a difficult choice, you need to go out of your way to give me as much guidance as I need—but no more.
 
-This guidance works best when it’s
+This guidance works best when it's:
 
 **Brief:** The smallest amount of information that will help me
 
@@ -71,6 +71,7 @@ This guidance works best when it’s
 :::info
 Utilize tips or little question mark icons adjacent to form fields, "What's this?" links, and even tool tips when guidance is needed.
 :::
+
 A just-in-time guidance is found on street corners throughout London. It's brief ("LOOK RIGHT" and an arrow pointing right), timely (you see it at the instant you need to be reminded), and unavoidable (you almost always glance down when you're stepping off a curb).
 
 ![](../../../static/img/usab19.jpg)
