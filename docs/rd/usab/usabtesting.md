@@ -21,8 +21,14 @@ Usability testing is ***NOT***:
 
 The kind of test you want to run will help you choose the right usability testing method. A usability testing process can be either:
 
-1. **Qualitative:** Qualitative usability testing focuses on the 'why'; understanding users' experiences, thoughts, and feelings while using a product. For example, you could conduct a think-aloud study where users verbalize their thoughts while using your product to complete usability tasks. Qualitative data can be gathered from observation, interviews, and surveys.
-1. **Quantitative:** Quantitative usability testing focuses on collecting and analyzing numerical data. A few popular usability testing metrics are:
+1. **Qualitative:** Qualitative usability testing focuses on the 'why'; understanding users' experiences, thoughts, and feelings while using a product. For example, you could conduct a think-aloud study where users verbalize their thoughts while using your product to complete usability tasks. Qualitative data can be gathered from observation, interviews, and surveys. 
+
+    **five-second test**: participants are shown an image of a web page or mobile screen for, you guessed it, **five seconds** and then asked follow-up questions about what they just saw. Five-second testing aims to asses what users recall so you can ensure that your design communicates the right message to the right audience. There are two reasons why you should use 5-second tests:
+
+    * *Check if the design communicates the right message:* when creating a new product, it can be hard to judge your design. For example, the messaging you use on a website can be clear to you but unclear to your audience. But a 5-second test can help you see if other people can understand the meaning of your design.
+    * *Ensure that the design conveys a good impression:* website visitors only spend a few seconds assessing web design before deciding whether they want to stay or leave. That’s why conveying the right impression to your visitors during the first few seconds is essential.
+
+2. **Quantitative:** Quantitative usability testing focuses on collecting and analyzing numerical data. A few popular usability testing metrics are:
 
     * **success rates:** what percentage of users succeed at completing the assigned task(s) successfully.
     * **task completion times:** how long it takes each user to complete each assigned task.
@@ -30,6 +36,8 @@ The kind of test you want to run will help you choose the right usability testin
     * **satisfaction ratings:** what satisfication score (e.g, at scale of 1 to 10) each user gives to the product based on their experience on completing the assigned task(s).
 
 From the collected data, you would then try to identify common patterns, generalize your findings, and make design changes.
+
+
 
 ## Truth about usability testing
 
