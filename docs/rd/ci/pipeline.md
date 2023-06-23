@@ -31,6 +31,10 @@ This create a [YAML](https://www.redhat.com/en/topics/automation/what-is-yaml) f
 
 Now, copy & past the following content into the `gradle.yml` file:
 
+:::danger Don't you worry!
+Even though the workflow file may look scary at first, once you understand what is in it, you will most likely find it pretty straightforward actually, so don't get scared by the look of them!
+:::
+
 ```yml
 name: Java CI with Gradle
 
@@ -160,7 +164,7 @@ on:
 
     2.1.g. **cicirello/jacoco-badge-generator@v2.9.0**: With the help of this action found on the Marketplace, we can analyze the generated reports and set minimum required thresholds for different coverage criteria. In our case, we set `80%` branch coverage (BC) minimum requirement. If the test cases achieve anything less than `80%` BC on the project source code, the workflow is interrupted.
 
-    2.2 **build_and_publish_docker_image:** The overall goal in this job is to publish the code to docker hub as a container image. We again choose to run the steps on latest version of `ubuntu`. We also specify that this job need successful execution & completion of the `build_and_test` job.
+    2.2 **build_and_publish_docker_image:** The overall goal in this job is to publish the code to [Docker hub](https://hub.docker.com/) as a container image. We again choose to run the steps on latest version of `ubuntu`. We also specify that this job need successful execution & completion of the `build_and_test` job.
 
     ```
     build_and_publish_docker_image:
@@ -181,11 +185,35 @@ on:
 
     2.2.a. **actions/checkout@v3:** check out the latest version of the ci-helloworld source code.
 
-    2.2.b **Login to Docker Hub:**
+    2.2.b **Login to Docker Hub:** In order to create a [container image](https://www.docker.com/resources/what-container/) and publish it to docker hub, we need to login using the command `docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}`:
 
+    :::info Github Secrets
+    Github secrets are encrypted environment variables that can be injected into your actions. A secret can not be seen once it have been created and they remain encrypted until they are used in a workflow. But even when they are used in a workflow they cannot be seen in the action logs since they are blurred out. They are thus suitable to be used to store sensitive information such as passwords and keys.
+    :::
 
+    :::info Create Github Secrets
+    First, if you do not have a docker hub account, go [https://hub.docker.com/](https://hub.docker.com/) and create one for free. Then, on Github, in the main page of your repo, go to `Settings` tab, then click on `Secrets and variables` in the left menu:
 
+    ![](../../../static/img/ci7.jpg)
 
+    Next Click on `Actions` and using the `New repository secret` create three separate secrets:
+    1. DOCKER_PASSWORD with value of whatever your docker hub password is.
+    2. DOCKER_USERNAME with value of whatever your docker hub username is.
+    3. DOCKER_REPO with value of `docker_hub_user/ci-helloworld` where `docker_hub_user` is your docker hub username.
+
+    ![](../../../static/img/ci8.jpg)
+    :::
+
+    :::tip Docker and Container Image
+    Docker is an open-source software designed to facilitate and simplify application development. It is a set of platform-as-a-service products that create isolated virtualized environments for building, deploying, and testing applications.    
+    A Docker container image is a lightweight, standalone, executable package of software that includes *everything* needed to run an application: source code, dependencies, libraries, runtime, system tools, system libraries and settings.
+    :::
+
+    2.2.c. **Build Container image:** This step builds the image using the docker command `docker build -t ${{ secrets.DOCKER_REPO }}:latest` where ${{ secrets.DOCKER_REPO }} is replaced by the secret's value you created in the previous step. `:latest` gives a tagname to this image called "latest" (i.e., the latest build of the image)
+
+    2.2.d. **Publish Docker image:** This is the very last step of the `build_and_publish_docker_image` job as well as the last step of the our entire workflow!
+
+    **YAYYYY!!! Congrats! You made it all the way to the end!**
 
 
 
