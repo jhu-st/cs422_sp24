@@ -38,3 +38,4 @@ This Dockerfile configuration will create a container image from the Gradle proj
 :::danger add, commit, push
 Do not forget to git add, commit and push your new Dockerfile.
 :::
+

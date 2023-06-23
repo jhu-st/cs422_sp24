@@ -36,7 +36,7 @@ Even though the workflow file may look scary at first, once you understand what 
 :::
 
 ```yml
-name: Java CI with Gradle
+name: Java CI/CD with Gradle
 
 on:
   push:
@@ -44,45 +44,44 @@ on:
   pull_request:
     branches: [ "master" ]
 
+  # permissions:
+  # contents: read
+
 jobs:
   build_and_test:
-
+    name: Build and Test
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up JDK 11
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-    - name: Setting Permissions
-      run: chmod a+x gradlew
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
-        arguments: build
-    - name: Test with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
-        arguments: test
-    - name: Run Test Coverage
-      run: ./gradlew jacocoTestReport
-    - name: ls
-      run: ls -l build
-    - name: Jacoco
-      uses: cicirello/jacoco-badge-generator@v2.9.0
-      with:
-        jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
-        fail-if-branches-less-than: 80
-  
+      - uses: actions/checkout@v3
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      - name: Setting Permissions
+        run: chmod a+x gradlew
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+        with:
+          arguments: build
+      - name: Test with Gradle
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+        with:
+          arguments: test
+      - name: Run Test Coverage
+        run: ./gradlew jacocoTestReport
+      - name: Jacoco
+        uses: cicirello/jacoco-badge-generator@v2.9.0
+        with:
+          jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
+          fail-if-branches-less-than: 100
+
   build_and_publish_docker_image:
-    environment: ci/cd
     name: Publish to Docker Hub
     runs-on: ubuntu-latest
     needs: [build_and_test]
-  
-  
+
     steps:
       - uses: actions/checkout@v3
       - name: Login to Docker Hub
@@ -111,33 +110,33 @@ on:
 
     ```
     build_and_test:
-
+    name: Build and Test
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up JDK 11
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-    - name: Setting Permissions
-      run: chmod a+x gradlew
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
-        arguments: build
-    - name: Test with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
-        arguments: test
-    - name: Run Test Coverage
-      run: ./gradlew jacocoTestReport
-    - name: Jacoco
-      uses: cicirello/jacoco-badge-generator@v2.9.0
-      with:
-        jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
-        fail-if-branches-less-than: 80
+      - uses: actions/checkout@v3
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      - name: Setting Permissions
+        run: chmod a+x gradlew
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+        with:
+          arguments: build
+      - name: Test with Gradle
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+        with:
+          arguments: test
+      - name: Run Test Coverage
+        run: ./gradlew jacocoTestReport
+      - name: Jacoco
+        uses: cicirello/jacoco-badge-generator@v2.9.0
+        with:
+          jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
+          fail-if-branches-less-than: 100
     ```
 
     `runs-n` specifies that the following commands will be run an ubuntu machine. 
