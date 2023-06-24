@@ -9,10 +9,14 @@ The following picture shows the main steps in the pipleline:
 
 ![](../../../static/img/ci2.jpg)
 
-Anytime a developr pushes code to the repo the latest code is built, before the tests are run against it. Once all tests are exectued (and passed), we publish the latest build of the app (i.e. `JAR` file) as a docker image into Docker Hub.
+Anytime a developer pushes code to the repo the latest code is built, before the tests are run against it. Once all tests are exectued (and passed), we publish the latest build of the app (i.e. `JAR` file) as a docker image into Docker Hub.
 
 :::caution IDE & Build Tools
 The instructions that follow use Gradle & Intellij, but feel free to use an IDE/tools of your choice!
+:::
+
+:::tip ci-helloworld
+The complete code for `ci-helloworld` example (that we create step-by-step in the following several sections) can be found at: https://github.com/jhu-st/ci-helloworld/
 :::
 
 ## Create a Java Gradle Project
